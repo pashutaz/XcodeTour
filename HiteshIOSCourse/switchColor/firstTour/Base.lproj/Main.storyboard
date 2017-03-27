@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="firstTour" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="xxu-ez-6tZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A97-tn-ecL">
+                                <rect key="frame" x="55" y="70" width="210" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="Ocx-Sj-WEs"/>
+                                    <constraint firstAttribute="height" constant="108" id="U05-2v-39s"/>
+                                </constraints>
+                                <state key="normal" image="redButton"/>
+                                <connections>
+                                    <action selector="redBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8f-Mv-Uvl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyw-LX-cBQ">
+                                <rect key="frame" x="55" y="374" width="210" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="NCG-m6-Bs9"/>
+                                    <constraint firstAttribute="height" constant="108" id="OBz-Hg-MRW"/>
+                                </constraints>
+                                <state key="normal" image="blueButton"/>
+                                <connections>
+                                    <action selector="blueBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LBZ-sc-Gi2"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bK7-Vn-Hdx">
+                                <rect key="frame" x="16" y="220" width="288" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="LEB-je-Hqx"/>
+                                    <constraint firstAttribute="width" constant="288" id="MpC-Xg-L19"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pyw-LX-cBQ" secondAttribute="bottom" constant="86" id="0UO-Dd-gXq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A97-tn-ecL" secondAttribute="trailing" constant="39" id="6FN-Xz-zRT"/>
+                            <constraint firstItem="Pyw-LX-cBQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="39" id="KC3-iM-TFl"/>
+                            <constraint firstItem="A97-tn-ecL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Lnr-0J-ayR"/>
+                            <constraint firstItem="bK7-Vn-Hdx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OCT-1t-61E"/>
+                            <constraint firstItem="A97-tn-ecL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="39" id="PDQ-jx-ChG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pyw-LX-cBQ" secondAttribute="trailing" constant="39" id="ZVi-zA-czC"/>
+                            <constraint firstItem="bK7-Vn-Hdx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yqa-Bx-QAf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorView" destination="bK7-Vn-Hdx" id="stD-hb-lDI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.75" y="35.91549295774648"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackGround" width="375" height="667"/>
+        <image name="blueButton" width="234" height="123"/>
+        <image name="redButton" width="234" height="123"/>
+    </resources>
+</document>
